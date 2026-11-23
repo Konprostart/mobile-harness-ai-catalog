@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "updatedAt": "2026-11-23T22:46:00Z",
+  "providers": [
+    {
+      "id": "github-models",
+      "name": "GitHub Models",
+      "category": "OPENAI_COMPATIBLE",
+      "baseUrl": "https://models.inference.ai.azure.com",
+      "wireProtocol": "OPENAI_CHAT",
+      "defaultModel": "gpt-4o-mini",
+      "authType": "API_KEY",
+      "apiFormats": ["OPENAI_CHAT"],
+      "capabilities": ["CHAT_COMPLETIONS", "STREAMING", "TOOL_CALLING", "VISION"],
+      "docsUrl": "https://docs.github.com/en/github-models",
+      "notes": "OpenAI-compatible; free tier available with a GitHub token.",
+      "official": true
+    },
+    {
+      "id": "anyscale",
+      "name": "Anyscale Endpoints",
+      "category": "OPENAI_COMPATIBLE",
+      "baseUrl": "https://api.endpoints.anyscale.com/v1",
+      "wireProtocol": "OPENAI_CHAT",
+      "defaultModel": "meta-llama/Llama-3.3-70B-Instruct",
+      "authType": "API_KEY",
+      "apiFormats": ["OPENAI_CHAT"],
+      "capabilities": ["CHAT_COMPLETIONS", "STREAMING", "TOOL_CALLING", "EMBEDDINGS"],
+      "docsUrl": "https://docs.endpoints.anyscale.com",
+      "notes": "OpenAI-compatible inference endpoints.",
+      "official": true
+    },
+    {
+      "id": "lepton",
+      "name": "Lepton AI",
+      "category": "OPENAI_COMPATIBLE",
+      "baseUrl": "https://api.lepton.ai/v1",
+      "wireProtocol": "OPENAI_CHAT",
+      "defaultModel": "llama3.3-70b",
+      "authType": "API_KEY",
+      "apiFormats": ["OPENAI_CHAT"],
+      "capabilities": ["CHAT_COMPLETIONS", "STREAMING", "TOOL_CALLING"],
+      "docsUrl": "https://www.lepton.ai/docs",
+      "notes": "OpenAI-compatible API for open and custom models.",
+      "official": true
+    }
+  ]
+}
